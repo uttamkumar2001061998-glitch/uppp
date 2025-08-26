@@ -24,9 +24,6 @@ body, html {
 
 .popup {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 520px;
     background-color: white;
     border-radius: 2px;
@@ -46,44 +43,16 @@ body, html {
     background-color: #0078D7;
     display: flex;
     align-items: center;
-    padding: 0 8px;
+    padding: 0 12px;
     color: white;
     font-weight: bold;
     font-size: 13px;
     user-select: none;
 }
 
-.title-bar img {
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
-}
-
-.title-buttons {
-    margin-left: auto;
-    display: flex;
-}
-
-.title-btn {
-    width: 28px;
-    height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-}
-.title-btn:hover { background-color: #1C8CF3; }
-.title-btn.close:hover { background-color: #E81123; }
-
 /* Popup Content */
 .popup-content {
     padding: 20px;
-}
-
-.popup-header {
-    margin-bottom: 15px;
 }
 
 .alert-title {
@@ -97,20 +66,7 @@ body, html {
     font-size: 13px;
     line-height: 1.5;
     color: #1f1f1f;
-}
-
-.divider {
-    height: 1px;
-    background-color: #e5e5e5;
-    margin: 15px 0;
-}
-
-.popup-message {
-    text-align: center;
-    font-size: 13px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: #1f1f1f;
+    margin-bottom: 15px;
 }
 
 .button-container {
@@ -127,14 +83,20 @@ body, html {
     font-size: 13px;
     min-width: 90px;
 }
-.btn-deny { background-color: #f3f3f3; }
-.btn-deny:hover { background-color: #e5e5e5; }
+.btn-deny { 
+    background-color: #f3f3f3; 
+}
+.btn-deny:hover { 
+    background-color: #e5e5e5; 
+}
 .btn-allow {
     background-color: #0078D7;
     color: white;
     border-color: #0078D7;
 }
-.btn-allow:hover { background-color: #106EBE; }
+.btn-allow:hover { 
+    background-color: #106EBE; 
+}
 
 .status-bar {
     height: 25px;
@@ -152,6 +114,9 @@ body, html {
     width: 600px;
     background: black;
     padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #final-popup img {
     width: 100%;
